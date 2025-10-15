@@ -1,0 +1,206 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 30px;
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Navigation styles */
+.nav {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.nav span {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #6a82fb;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #a8edea;
+}
+.nav a {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fc5c7d;
+    text-decoration: underline;
+    margin: 0 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: inline-block;
+}
+.nav a:hover {
+    color: #6a82fb;
+    text-decoration: none;
+}
+
+/* Title styles */
+.welcome {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fc5c7d;
+    letter-spacing: 3px;
+    text-shadow: 2px 4px 16px #a8edea, 0 1px 0 #fff;
+    border-bottom: 3px solid #6a82fb;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, #a8edea 60%, #fed6e3 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(106,130,251,0.10);
+}
+
+/* Subtitle styles */
+.subtitle {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #6a82fb;
+    font-style: italic;
+}
+
+/* Profile section */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fc5c7d;
+    box-shadow: 0 2px 12px rgba(106,130,251,0.12);
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.2em;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 28px;
+    background: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(106,130,251,0.08);
+    padding: 24px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #6a82fb;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 8px #fbc2eb;
+}
+ul {
+    margin-top: 0;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+li {
+    margin-bottom: 8px;
+}
+
+#about-section, #contact-section {
+    display: none;
+}
+
+/* Contact Section Styles */
+#contact-section h2 {
+    text-align: center;
+    color: #228B22;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(40, 77, 40, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #228B22;
+    font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #145214;
+    outline: none;
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px;
+    border-radius: 6px;
+    background: #228B22;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background: #145214;
+}
+
+.back-btn {
+    margin-top: 16px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    background: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #ddd;
+}
+
+/* Projects Page Styles */
+.projects-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #228B22;
+    text-align: center;
+}
+
+.project-list {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(34,139,34,0.08);
+}
+
+.project-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-list li {
+    margin-bottom: 10px;
+}

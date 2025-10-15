@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leslie Jane B. Nable Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <span style="font-size:2em; font-weight:bold;">NABLE</span>
+        <a onclick="showSection('about-section')">Home</a>
+        <a href="project.html">Projects</a>
+        <a class="contact-link" onclick="showSection('contact-section')">Contact Me</a>
+    </div>
+    <!-- About Me Section -->
+    <div id="about-section">
+        <div class="welcome">
+            Welcome to My Portfolio
+        </div>
+        <div class="subtitle">
+            Making solutions through technology.
+        </div>
+        <div class="profile-header">
+            <img src="leslieFormalpic.jpg" alt="LeslieFormal" class="profile-pic">
+            <div class="profile-info">
+                <span><strong>Leslie Jane B. Nable</strong></span>
+                <span> 🏠︎ Minglanilla Cebu, Philippines</span>
+                <span> 📝 Aspiring Junior Software Engineer</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate and dedicated aspiring Junior Software Engineer with a strong foundation in computer science and a keen interest in web development, artificial intelligence, and data-driven technologies. My journey in technology began with a fascination for how software can solve real-world problems and improve lives.
+            </p>
+            <p>
+                Throughout my academic career, I have honed my skills in various programming languages including Python and Java. I have also worked on several projects that involved building responsive web applications, developing machine learning models, and creating efficient algorithms.
+            </p>
+            <p>
+                I am a quick learner, a team player, and I thrive in collaborative environments. I am eager to contribute my skills and enthusiasm to a dynamic team where I can continue to grow and make a meaningful impact in the tech industry.
+            </p>
+        </div>
+        <div class="section">
+            <h2>Education Attainment</h2>
+            <ul>
+                <li>
+                    <strong>Minglanilla Central School (2012 - 2018)</strong>
+                </li>
+                <li>
+                    <strong>Vito National High School (2018 - 2022)</strong>
+                </li>
+                <li>
+                    <strong>Immaculate Heart of Mary Academy - (2022 - 2024)</strong>
+                </li>
+                <li>
+                    <strong>Cebu Technological University - Main Campus (2024 - Present)</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message" required rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div>
+            <button class="back-btn" onclick="showSection('about-section')">Back to Home</button>
+        </div>
+    </div>
+    <script>
+        // Show About section by default
+        document.getElementById('about-section').style.display = 'block';
+        function showSection(sectionId) {
+            document.getElementById('about-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'none';
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
